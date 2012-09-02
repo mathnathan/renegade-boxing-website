@@ -1,0 +1,7 @@
+{% if names %}
+	{% for name in names %}
+		<p>{{ name }}</p>
+	{% endfor %}
+{% else %}
+	<p>There are no members!</p>
+{% endif %}
