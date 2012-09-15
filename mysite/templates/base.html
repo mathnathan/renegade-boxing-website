@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+	<title>base.html</title>
+
+	<style type="text/css" >	
+		body {
+		  	margin: auto;
+		  	background-image: url({{ STATIC_URL }}base/images/bg.png);
+			background-attachment: fixed;
+		  	width: 996px;
+		  	position: relative;
+		}
+
+		#banner {
+		  	height: 210px;
+		}
+
+		#banner p {
+		  	text-align: left;
+		  	font-weight: inherit;
+		  	margin-left: 800px;
+		  	position: absolute;
+		  	color: white;
+		  	margin-top: 160px;
+		}
+
+		#banner img {
+		  	height: 143px;
+		  	margin-top: 64px;
+		  	width: 714px;
+		  	position: absolute;
+		  	margin-left: 30px;
+		}
+
+		#banner p#phnumber {
+		  	font-size: 1.3em;
+		  	font-weight: bolder;
+		  	position: absolute;
+		  	margin-top: 182px;
+		}
+
+		#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
+		  	font-family: sans-serif;
+		}
+
+		#cssmenu {
+		  	background: transparent url({{ STATIC_URL }}base/images/nav-bottom-bg.png) repeat-x scroll center bottom;
+		  	width: 996px;
+		  	padding-left: 0px;
+		  	margin-top: 45px;
+		  	height: 65px;
+		  	top: 0px;
+		  	padding-top: 0px;
+			font-size: 19px;
+		}
+
+		#cssmenu ul {
+		  	padding-top: 0px;
+		  	padding-left: 0;
+		  	background-color: transparent;
+		  	height: 60px;
+		}
+
+		#cssmenu ul li {
+		  	float: left;
+		  	background-position:  center center;
+		  	background-repeat: no-repeat;
+		  	height: 60px;
+		  	line-height: 70px;
+		  	background-image: url({{ STATIC_URL }}base/images/nav-bg.png);
+		  	background-color: transparent;
+		  	text-align: center;
+		  	width: 166px;
+		  	list-style-type: none;
+		}
+
+		#cssmenu ul li a {
+		  	text-decoration: none;
+		  	color: white;
+			outline: 0;
+		}
+
+		#cssmenu ul li a:hover, #cssmenu ul li.active a {
+		  	width: 166px;
+		  	list-style-type: none;
+		  	background-repeat: no-repeat;
+		  	background-position:  center center;
+		  	line-height: 70px;
+		  	float: left;
+		  	height: 60px;
+		  	background-color: transparent;
+		  	background-image: url({{ STATIC_URL }}base/images/nav-color.png);
+		  	text-align: center;
+		  	color: #413015;
+		}
+
+		#content {
+			background-image: url({{ STATIC_URL }}base/images/content-bg.png);
+		  	background-color: transparent;
+			margin: -11pt 0pt 0pt 0pt;
+			height: 1500px;
+		}
+
+		#content p {
+			color: white;
+		}
+
+		#footer {
+			background-image: url({{ STATIC_URL }}base/images/content-bg.png);
+		  	background-color: transparent;
+			margin: 0pt 0pt 20pt 0pt;
+			height: 150px;
+		}
+
+		#footer p {
+			color: white;
+		}
+			
+	</style>
+</head>
+
+<body>
+	<div id="banner"> 
+		<img src="{{ STATIC_URL }}base/images/banner.png" alt="Renegade Boxing" align="left">
+		<p> Call today </p>
+		<p id="phnumber"> (774) 2BO-XING </p>
+	</div>
+
+{% block menu %}
+	<div id="cssmenu">
+		<ul>
+			<li><a href={% url home %}>Home</a></li>
+			<li><a href={% url facilities %}>Facilities</a></li>
+			<li><a href={% url classes %}>Classes</a></li>
+			<li><a href={% url location %}>Location</a></li>
+			<li><a href={% url members %}>Members</a></li>
+			<li><a href={% url contact %}>Contact</a></li>
+		</ul>
+	</div>
+{% endblock %}
+
+	<div id="content">
+		<p>Content Block</p>
+	</div>
+
+	<div id="footer">
+		<p>Footer Block</p>
+	</div>
+
+</body>
+
+</html>

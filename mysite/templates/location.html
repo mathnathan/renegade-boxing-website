@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block menu %}
+	<div id="cssmenu">
+		<ul>
+			<li><a href={% url home %}>Home</a></li>
+			<li><a href={% url facilities %}>Facilities</a></li>
+			<li><a href={% url classes %}>Classes</a></li>
+			<li class="active"><a href={% url location %}>Location</a></li>
+			<li><a href={% url members %}>Members</a></li>
+			<li><a href={% url contact %}>Contact</a></li>
+		</ul>
+	</div>
+{% endblock %}
