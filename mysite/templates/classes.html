@@ -1,14 +1,49 @@
 {% extends "base.html" %}
 
-{% block menu %}
-	<div id="cssmenu">
-		<ul>
-			<li><a href={% url home %}>Home</a></li>
-			<li><a href={% url facilities %}>Facilities</a></li>
-			<li class="active"><a href={% url classes %}>Classes</a></li>
-			<li><a href={% url location %}>Location</a></li>
-			<li><a href={% url members %}>Members</a></li>
-			<li><a href={% url contact %}>Contact</a></li>
-		</ul>
-	</div>
+{% block style %}
+<style type="text/css">
+	#content #bottom { padding: 0px 0px 0px 0px; }
+	img { }
+</style>
+{% endblock %}
+
+{% block content-title %}
+	<h1>Renegade Boxing Classes</h1>
+{% endblock %}
+
+{% block top-content %}{% endblock %}
+
+{% block left-content %}
+<p>
+We do things differently here at Renegade Boxing, and that's why people love
+us. You want to learn the sweet science of boxing? We offer classes for beginners,
+intermediate, and advanced fighters. Our <a href={% url staff %}>coaching
+staff</a> is composed of some of Tallahassee's finest trainers and professional
+boxers. With our cumulative knowledge and resources we're certain to help you
+realize your true potential.
+</p>
+<br>
+<p>
+For our non-competetive members who are interested in conditioning and
+self defense, we provide to you Tallahassee's most in demand personal trainer,
+Rose Miller. By attending her conditioning classes and taking advantage of her
+personal training opportunities, you'll reach levels of personal fitness and
+self confidence you never knew possible.
+</p>
+{% endblock %}
+
+{% block right-content %}
+<img src='{{STATIC_URL }}base/images/warriors.jpg'>
+{% endblock %}
+
+{% block sidebar %}{% endblock %}
+
+{% block bottom %}
+<iframe
+src="https://www.google.com/calendar/embed?title=Renegade%20Boxing%20Class%20Calendar&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23d59740&amp;src=renegade-boxing.com_ltanmea2m0ldp5df414d99fqc0%40group.calendar.google.com&amp;color=%23b1440e&amp;ctz=America%2FNew_York"
+style="border:solid 8px #d59740; margin: 50px 40px 20px 40px;"
+width="900" 
+height="770" 
+frameborder="0"
+scrolling="no"></iframe>
 {% endblock %}

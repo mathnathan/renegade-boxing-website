@@ -1,15 +1,49 @@
 {% extends "base.html" %}
 
-{% block menu %}
-	<div id="cssmenu">
-		<ul>
-			<li class="active"><a href={% url home %}>Home</a></li>
-			<li><a href={% url facilities %}>Facilities</a></li>
-			<li><a href={% url classes %}>Classes</a></li>
-			<li><a href={% url location %}>Location</a></li>
-			<li><a href={% url members %}>Members</a></li>
-			<li><a href={% url contact %}>Contact</a></li>
-		</ul>
-	</div>
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}base/css/home-style.css">
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="{{ STATIC_URL }}base/scripts/home-animate.js"></script>
 {% endblock %}
 
+{% block body %}
+	<div id="slider">
+		<img class="arrow" id="left_arrow" src="{{ STATIC_URL }}base/images/left_arrow.png">
+		<img class="arrow" id="right_arrow" src="{{ STATIC_URL }}base/images/right_arrow.png">
+		<img id="slide-text" src="{{ STATIC_URL }}base/images/slide-text.png">
+		<a href={% url contact %}><p>JOIN US</p></a>
+		<div id="images"> <!-- The order they're in is the order they show --!>
+			<img src="{{ STATIC_URL }}base/images/rafi_stance.jpg">
+			<img src="{{ STATIC_URL }}base/images/slide1.jpg">
+			<img src="{{ STATIC_URL }}base/images/flare.jpg">
+			<img src="{{ STATIC_URL }}base/images/slide2.jpg">
+			<img src="{{ STATIC_URL }}base/images/punching_line.jpg">
+			<img src="{{ STATIC_URL }}base/images/slide4.jpg">
+			<img src="{{ STATIC_URL }}base/images/push-ups.jpg">
+			<img src="{{ STATIC_URL }}base/images/slide7.jpg">
+			<img src="{{ STATIC_URL }}base/images/slide3.jpg">
+		</div>
+	</div>
+
+	<div id="blocks">
+		<span id="left-block">
+			<p id="top-text"> First Class Instruction </p>
+			<a href={% url staff %}><p id="bottom-text"> SEE OUR COACHES > </p></a>
+			<img src="{{ STATIC_URL }}base/images/joab_fists.jpg">
+		</span>
+		<span id="center-block">
+			<a href={% url contact %}><p>SIGN UP</p></a>
+			<img src="{{ STATIC_URL }}base/images/free-trial.jpg">
+		</span>
+		<span id="right-block">
+			<p id="top-text"> Unparalleled Conditioning </p>
+			<a href={% url classes %}><p id="bottom-text"> SEE OUR CLASSES > </p></a>
+			<img src="{{ STATIC_URL }}base/images/box2.jpg">
+		</span>
+	</div>
+
+	{% block footer %}
+		{{ block.super }}
+	{% endblock %}
+{% endblock %}
