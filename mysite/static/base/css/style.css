@@ -1,0 +1,217 @@
+body {
+	margin: auto;
+	background-image: url(../images/bg.png);
+	background-attachment: fixed;
+	width: 996px;
+	position: relative;
+}
+
+/*--------------------------- Banner -----------------------------------*/
+
+#banner {
+	height: 210px;
+}
+
+#banner p {
+	text-align: left;
+	font-weight: inherit;
+	margin-left: 800px;
+	position: absolute;
+	color: white;
+	margin-top: 160px;
+}
+
+#banner img {
+	height: 143px;
+	margin-top: 64px;
+	width: 714px;
+	position: absolute;
+	margin-left: 30px;
+}
+
+#banner p#phnumber {
+	font-size: 1.3em;
+	font-weight: bolder;
+	position: absolute;
+	margin-top: 182px;
+}
+
+/*--------------------------- Menu -----------------------------------*/
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
+	font-family: sans-serif;
+}
+
+#cssmenu {
+	background: transparent url(../images/nav-bottom-bg.png) repeat-x scroll center bottom;
+	width: 996px;
+	padding-left: 0px;
+	margin-top: 45px;
+	height: 82px;
+	top: 0px;
+	padding-top: 0px;
+	position: relative;
+}
+
+#cssmenu ul {
+	padding-top: 0px;
+	padding-left: 0;
+	background-color: transparent;
+	height: 60px;
+	position: absolute;
+}
+
+#cssmenu ul li {
+	float: left;
+	background-position:  center center;
+	background-repeat: no-repeat;
+	height: 60px;
+	line-height: 70px;
+	background-image: url(../images/nav-bg.png);
+	background-color: transparent;
+	text-align: center;
+	width: 166px;
+	list-style-type: none;
+	position: absolute;
+}
+
+#cssmenu ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	outline-style: none;
+}
+
+#cssmenu ul li a.active, #cssmenu ul li a.hover {
+	width: 166px;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	background-position:  center center;
+	line-height: 70px;
+	float: left;
+	height: 60px;
+	background-color: transparent;
+	text-align: center;
+	color: black;
+	background-image: url(../images/nav-color.png)
+}
+
+#cssmenu img {
+	height: 60px;
+	display: none;
+	position: absolute;
+	z-index: 3;
+	left: 30px;
+}
+
+/*--------------------------- Content ------------------------------------*/
+
+#content {
+	background-image: url(../images/content-bg.png);
+	background-color: transparent;
+	width: 996px;
+	height: auto;
+	-moz-box-shadow: 5px 5px 5px 0px #272727;
+	-webkit-box-shadow: 5px 5px 5px 0px #272727;
+	box-shadow: 5px 5px 5px 0px #272727;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#content #content-title {
+	padding: 25px 40px 0px 40px;
+	width: 916px;
+}
+
+#content h1, #content h2 {
+	color: #ab362d;
+}
+
+#content a {
+	color: #006b64;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
+#content a:visited {
+	color: #2e6b67;
+}
+
+#content #top {
+	clear: both;
+	padding: 0px 40px 0px 40px;
+	height: auto;
+	width: 916px;
+}
+
+#content #right {
+	padding: 0px 40px 0px 0px;
+	float: right;
+	height: auto;
+	width: 376px;
+}
+
+#content #left {
+	padding: 0px 0px 0px 40px;
+	float: left;
+	height: auto;
+	width: 530px;
+}
+
+#content p {
+	color: white;
+	line-height: 1.5em;
+	margin-left: 10px;
+}
+
+#content #bottom {
+	clear: both;
+	padding: 0px 40px 0px 40px;
+	height: auto;
+	width: 916px;
+}
+
+/*----------------------------- Footer --------------------------------*/
+
+#footer {
+	background-image: url(../images/content-bg.png);
+	background-color: transparent;
+	margin: 30px 0px 30px 0px;
+	height: 320px;
+	width: 996px;
+	position: relative;
+	-moz-box-shadow: 5px 5px 5px 0px #272727;
+	-webkit-box-shadow: 5px 5px 5px 0px #272727;
+	box-shadow: 5px 5px 5px 0px #272727;
+}
+
+#footer span {
+	position: absolute;
+	width: 332px;
+	padding: 0px 0px 0px 25px;
+}
+
+#footer h2 {
+	color: #db9d46;
+	font-family: verdana, arial black, arial;
+}
+
+#foot-center {
+	margin-left: 340px;
+}
+
+#foot-right {
+	margin-left: 680px;
+}
+
+#foot-right a {
+	color: #25706b 
+}
+
+#footer p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	line-height: 12px;
+}

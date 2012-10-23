@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style type="text/css">
+	#content #bottom {
+		padding: 0;
+	}
+	#content #bottom ul { 
+		position: relative;
+		list-style-type: none; 
+		width: 936px;
+		height: 710px;
+		padding: 0px 30px 0px 30px;
+	}
+	#content #bottom li { 
+		width: 300px;
+		float: left;
+		padding: 0px 5px 0px 5px;
+	}
+	#content #bottom li img {
+		padding: 0px 5px 0px 5px;
+	}
+
+	#content #bottom #trainers {
+		padding: 0px 40px 0px 40px;
+		height: 1560px;
+		width: 916px;
+		clear: both;
+	}
+
+	#content #bottom #trainers #coach {
+		float: left;
+		width: 660px;
+		height: 242px;
+		padding-top: 20px;
+	}
+	#content #bottom #trainers #coach-pic {
+		padding: 20px 0px 0px 50px;
+		float: left;
+		width: auto;
+		height: 242px;
+	}
+	#content #bottom #trainers #coach-pic2 {
+		padding: 20px 40px 0px 10px;
+		float: left;
+		width: auto;
+		height: 242px;
+	}
+
+	#content #bottom #staff {
+		padding: 0px 40px 0px 40px;
+		height: 150px;
+		width: 916px;
+		clear: both;
+	}
+</style>
+{% endblock %}
+
+
+{% block content-title %}
+{% endblock %}
+
+{% block top-content %}
+<h1>The Owners</h1>
+<p> The Renegade Boxing Club was created by three friends who share an affinity
+for health and fitness, and a love for the science of boxing. Their diverse
+skills compliment one another and have combined to forge a strong and unique
+business, founded by unbreakable bonds. </p>
+{% endblock %}
+
+{% block left-content %}{% endblock %}
+{% block right-content %}{% endblock %}
+{% block bottom %}
+<ul>
+	<li id="joab">
+		<img src='{{ STATIC_URL }}base/images/joab.jpg'>
+		<b><p>Joab Corey</p></b>
+		<p class="description">A popular economics professor at Florida State
+		University and <a
+		href="http://www.ratemyprofessors.com/ShowRatings.jsp?tid=1305337">top
+		25</a> in the country. As a former amatuer boxer, professional sparring
+		partner, and coach for West Virginia University's <a
+		href="http://boxingclub.wvu.edu/">Boxing Team</a>, he and
+		his amazing endurance keep our fighters sharp with endless rounds of
+		sparring. His economic insight and physical prowess make him an
+		invaluable part of our family.</p> 
+	</li>
+	<li id="rose">
+		<img src='{{ STATIC_URL }}base/images/rose.jpg'>
+		<b><p>Rose Miller</p></b>
+		<p class="description">Tallahassee's most in demand personal trainer. After
+		starting her own successful personal training business, she wanted to
+		challenge herself further and open her own gym. Her passion and energy are
+		infectious and bring a new vigor into the gym every day. With multiple
+		degrees and expertise in physiology and nutrition, she equips our fighters
+		with unparalleled endurance and strength.</p>
+	</li>
+	<li id="nathan">
+		<img src='{{ STATIC_URL }}base/images/nathan.jpg'>
+		<b><p>Nathan Crock</p></b>
+		<p class="description">Founder and head coach of the Florida State
+		University Boxing Team. He's an executive member of the <a
+		href="http://usiba.info">United States Intercollegiate Boxing
+		Association</a> and the Vice Chairman of the <a
+		href="http://thefcbc.com">Florida Collegiate Boxing Conference</a>. His
+		scientific training and objective approach to combat provides us with
+		unique insight to boxing technique and strategy. See his <a
+		href="http://mathnathan.github.com">CV</a> for more.
+		</p>
+	</li>
+</ul>
+<div id="trainers">
+	<h1>The Trainers and Staff</h1>
+	<p>Here at the Renegade Boxing Club we live by a motto "Respect, Honor, and
+	Discipline". To us it's more than a slogan or catch phrase, it outlines
+	our lives and spills over into the gym and our business. We only bring in
+	talented individuals who feel as strongly about this philosophy as we do.</p>
+	<h2>Trainers</h2>
+	<div id="coach">
+		<b><p>Coach Darnell Baker</p></b>
+		<p>After beginning boxing in 1968 he managed and
+			trained at gyms all over California including Shields Pittman's
+			Gym, <a href="http://kingsboxinggym.com">King's Gym</a>, and <a href="http://www.gladiatorsboxinggym.com/">Gladiator Boxing Club</a>. In Georgia he
+			was involved in the <a href="http://artofboxing.net/">Atlanta Art
+of Boxing</a>, the <a href="http://decaturboxing.com/">Decatur Boxing Club</a>, and
+			opened his own gym, Center Court Boxing Club. Through
+			his career he's worked with many athletes from amateurs to World
+			Champions. He's networked with
+			numerous promoters, managers, and trainers including Harry
+			Kabakoff, Johnny Gant, Byron Ogelsby, Xavier Biggs,
+			and more. He now bring his more than 30 years of boxing experience
+			to us and the FSU Boxing Team.</p>
+	</div>
+	<div id="coach-pic">
+		<img src='{{ STATIC_URL }}base/images/darnell.jpg'>
+	</div>
+	<div id="coach-pic2">
+		<img src='{{ STATIC_URL }}base/images/jones.jpg'>
+	</div>
+	<div id="coach">
+		<b><p>Coach Kimmus Jones</p></b>
+		<p>Coach Jones comes to us from Pensacola, Florida where
+			he was introduced to the science of boxing at an early age by
+			legendary trainer Roy Jones Senior. With almost 20 years of
+			experience competing, training, and participating in the world of
+			boxing, he's been around some of the most talented fighters in the
+			world. Coach Jones is dedicated to our fighters and brings to them
+			a rare skill set and unique perspective. He looks forward to
+			building a foundation with the FSU Boxing Team and in creating a
+			new brand of boxing which will continue to innovate and evolve for
+			years to come.</p>
+	</div>
+	<div id="coach">
+		<b><p>Coach Dmitry Dukhovskoy</p></b>
+		<p>Bio coming soon.</p>
+	</div>
+	<div id="coach-pic">
+		<img src='{{ STATIC_URL }}base/images/dmitry.jpg'>
+	</div>
+	<div id="coach-pic2">
+		<img src='{{ STATIC_URL }}base/images/davis.jpg'>
+	</div>
+	<div id="coach">
+		<b><p>Coach Robert Davis</p></b>
+		<p>Bio coming soon.</p>
+	</div>
+	<div id="coach">
+		<b><p>Coach Jeremiah Marschka</p></b>
+		<p>Bio coming soon.</p>
+	</div>
+	<div id="coach-pic">
+		<img src='{{ STATIC_URL }}base/images/jeremiah.jpg'>
+	</div>
+</div>
+<div id="staff">
+	<h2>Staff</h2>
+	<div id="staff-info">
+		<b><p>Vincent Giovannoni</p></b>
+		<p>Bio coming soon.</p>
+	</div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block style %}
+
+<style type="text/css">
+
+#content #bottom {
+	height: 600px;
+}
+
+img { padding: 0px 0px 0px 22px; }
+
+</style>
+
+{% endblock %}
+
+{% block content-title %}
+<h1>The Fight Team</h1>
+{% endblock %}
+
+{% block top-content %}
+<p>The Renegade Boxing Club is home to talented amatuer, professional, and collegiate
+boxers. We provide opportunities for our fighters to compete all around the
+country.
+{% endblock %}
+
+{% block left-content %}{% endblock %}
+{% block right-content %}{% endblock %}
+{% block bottom %}
+<h2>The Florida State University Boxing Team</h2>
+<p>We are the proud home of Florida State University's Boxing Team.</p>
+<p>Descriptions and bios coming soon.</p>
+<img src="{{ STATIC_URL }}base/images/team.jpg">
+{% endblock %}
+

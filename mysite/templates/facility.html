@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style type="text/css">
+	#content #bottom { padding: 0px 0px 0px 0px; }
+	img { padding: 20px 20px 15px 20px; }
+</style>
+{% endblock %}
+
+{% block content-title %}<h1>Training Facility</h1>{% endblock %}
+
+{% block top-content %}
+<p>
+Our 6,500 square foot facility is currently undergoing significant renovations. We
+train around 50-60 athletes everyday and the number continues to grow. This gym
+is a family. Our members take pride in the loyalty we share and the sense
+of belonging that comes when we train together.
+</p>
+<p>
+As our family grows it's only natural that our facilty grow with it. Upon
+completion of our renovations the new facility will boast a dedicated weight
+lifting room, with new dumbells, barbells, kettle bells, benches, machines and
+more. The space for boxing training will also increase and be freshly
+stocked with more gear and equipment. We will be improving the facility
+grounds with more parking and new roads to access the gym.
+</p>
+<br/>
+<h2>Improve your life, and grow along side dedicated athletes
+and passionate coaches.
+</h2>
+<h2 style="text-align: center">Come <a href={% url contact %}>JOIN</a> us!</h2> 
+{% endblock %}
+
+{% block left-content %}{% endblock %}
+{% block right-content %}{% endblock %}
+
+{% block bottom %}
+<img src='{{ STATIC_URL }}base/images/under-construction.jpg'>
+{% endblock %}
