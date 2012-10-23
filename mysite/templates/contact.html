@@ -1,13 +1,22 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 
-{% block content-title %}<h1>Drop Us A Line</h1>{% endblock %}
+{% block style %}
+
+<style type="text/css">
+
+#content #bottom {
+	height: 60px;
+}
+
+</style>
+
+{% endblock %}
+
+
+{% block content-title %}<h1>Coming Soon</h1>{% endblock %}
 {% block top-content %}{% endblock %}
 {% block right-content %}
-	<form action="/contact/" method="post" class="uniForm">{% csrf_token %}
-	{{ form|crispy }}
-	<input type="submit" value="Submit" />
-	</form>
 {% endblock %}
 {% block left-content %}{% endblock %}
 {% block bottom %}{% endblock %}
