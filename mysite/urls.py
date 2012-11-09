@@ -1,6 +1,5 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-import payments.urls as payment_urls
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -15,6 +14,5 @@ urlpatterns = patterns('',
 	url(r'^classes/', 'mysite.views.classes', name='classes'),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^payments/', include(payment_urls)),
 	url(r'^grappelli/', include('grappelli.urls')),
 )

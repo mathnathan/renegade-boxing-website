@@ -28,7 +28,7 @@ $(document).ready(function() {
 	}).mouseout( function() {
 		$(this).animate({backgroundColor: '#1e1e1e'}, '100');  });
 	$('#center-block p').mouseover( function() {
-		$(this).animate({backgroundColor: '#6b221c'}, '100'); 
+		$(this).animate({backgroundColor: '#bc3b32'}, '100'); 
 	}).mouseout( function() {
 		$(this).animate({backgroundColor: '#1e1e1e'}, '100');  });
 });

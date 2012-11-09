@@ -17,7 +17,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'mysite',                      # Or path to database file if using sqlite3.
         'USER': 'nathan',                      # Not used with sqlite3.
-        'PASSWORD': 'dev',                  # Not used with sqlite3.
+        'PASSWORD': 'Mathisnumbuh1!',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -118,7 +118,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
 	'django_extensions',
-	'payments',
 	'zebra',
 	'crispy_forms',
 )
@@ -151,9 +150,6 @@ LOGGING = {
         },
     }
 }
-
-# Settings files from the apps
-from payments import payments_settings
 
 # Grappelli admin site title
 GRAPPELLI_ADMIN_TITLE = 'Renegade Boxing Administration'

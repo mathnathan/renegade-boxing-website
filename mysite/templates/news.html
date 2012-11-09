@@ -5,7 +5,12 @@
 <style type="text/css">
 
 #content #bottom {
-	height: 1320px;
+	height: 1940px;
+}
+
+.proboxers {
+	float: left;
+	margin: 25px 0px 25px 25px;
 }
 
 </style>
@@ -22,6 +27,15 @@
 {% block left-content %}{% endblock %}
 {% block right-content %}{% endblock %}
 {% block bottom %}
+<iframe class="proboxers" width="420" height="315" src="http://www.youtube.com/embed/dGfJcVVq81A"
+frameborder="1" allowfullscreen></iframe>
+<iframe class="proboxers" width="420" height="315" src="http://www.youtube.com/embed/idH9sxt2FcA"
+frameborder="1" allowfullscreen></iframe>
 <img src="{{ STATIC_URL }}base/images/fcbc_teaser.png">
-{% endblock %}
+<h2>Tickets</h2>
+<p>Sit tight! You will be able to purchase your tickets here soon!</p>
+<h2>For our Sponsors</h2>
+<p>We encourage all interested in advertising and supporting college boxing to submit a sponsorship application. We look forward to working with you!</p>
+<p>Download - <a href="{{ STATIC_URL }}base/media/sponsorship_application.pdf">Sponsorship Application</a>
 
+{% endblock %}
