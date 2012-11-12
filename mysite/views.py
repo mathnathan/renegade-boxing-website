@@ -9,6 +9,12 @@ def home(request):
 def news(request):
 	return render_to_response('news.html', context_instance=RequestContext(request))
 
+def fcbc1(request):
+	return render_to_response('fcbc1.html', context_instance=RequestContext(request))
+
+def fcbc1_videos(request):
+	return render_to_response('fcbc1_videos.html', context_instance=RequestContext(request))
+
 def facility(request):
 	return render_to_response('facility.html', context_instance=RequestContext(request))
 

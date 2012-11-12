@@ -17,25 +17,63 @@
 
 {% endblock %}
 
+{% block scripts %}
+<script>
+$(document).ready(function() {
+	$('#content p.button').mouseover( function() {
+		$(this).animate({backgroundColor: '#25706b'}, '100'); 
+	}).mouseout( function() {
+		$(this).animate({backgroundColor: '#2e2e2e'}, '100');  });
+});
+</script>
+{% endblock %}
+
 {% block content-title %}
-<h1>Upcoming Events</h1>
+<h1 style='padding-bottom: 20px'>Upcoming Events</h1>
 {% endblock %}
 
 {% block top-content %}
+<h1 class='event-title' style='padding-bottom: 20px'>Florida Collegiate Boxing Conference Invitational</h1>
 {% endblock %}
 
-{% block left-content %}{% endblock %}
-{% block right-content %}{% endblock %}
+{% block left-content %}
+<img style='float: left; padding: 20px 20px 0px 0px' src='{{ STATIC_URL }}base/images/fcbc-logo-small.png'>
+<h3>About the Event</h3>
+<p>Florida's first intercollegiate boxing match since 1960. With <a href="{% url fcbc1 %}">World Champion
+boxers</a> in attendance you won't want to miss this historic
+revival of college boxing. Come see the culmination of college rivalry as
+fighters from Florida schools face off in the ring! ... <a href={% url fcbc1 %}>(more)</a></p>
+<h2 style='padding-top: 70px'>Tallahassee-Leon County Civic Center</h2>
+<p style='font-size: 1.15em'><a href="http://www.tlccc.org/events_html/COLLEGIATE_BOXING_2012.htm">Venue Information</a></p>
+<h2>Hotel and Lodging Accomodations</h2>
+<p style='font-size: 1.15em'>Athletes and General Public - <a
+href='http://www.starwoodhotels.com/alofthotels/property/overview/index.html?propertyID=3046'>Aloft</a></p>
+<h2>Sponsorship</h2>
+<p>We encourage all interested in advertising and supporting college boxing to
+submit a <a href="{{ STATIC_URL }}base/media/sponsorship_application.pdf">sponsorship application</a>. We look
+forward to working with you!</p>
+{% endblock %}
+
+{% block right-content %}
+<img style='float: left; padding: 0px 20px 0px 20px' src='{{ STATIC_URL }}base/images/vertbar-grey.png'>
+<h3 class='center large'>COLLEGE BOXING IS BACK</h3>
+<h3 class='center small'>DECEMBER 1ST, 2012</h3>
+<h3 class='center small'>LEON COUNTY CIVIC CENTER | 7:00pm</h3>
+<a href='http://www.ticketmaster.com/event/22004966A83163B6?artistid=1798686&majorcatid=10004&minorcatid=33'>
+<img id='ticket-button' src='{{ STATIC_URL }}base/images/ticket-button.png'>
+
+<a class='button'
+href="http://www.youtube.com/embed/kVFCrjy4G4U?autoplay=1&wmode=transparent"><p
+style='text-align: center; margin-top: 120px; margin-left: 100px' class='button'>EVENT PROMO</p></a>
+
+<a class='button' href="http://www.youtube.com/user/RenegadeBoxingClub/videos?flow=grid&view=0"><p
+style='text-align: center; margin-left: 55px; width: 300px'  class='button'>MORE PROMO VIDEOS</p></a>
+
+
+</a>
+
+{% endblock %}
+
 {% block bottom %}
-<iframe class="proboxers" width="420" height="315" src="http://www.youtube.com/embed/dGfJcVVq81A"
-frameborder="1" allowfullscreen></iframe>
-<iframe class="proboxers" width="420" height="315" src="http://www.youtube.com/embed/idH9sxt2FcA"
-frameborder="1" allowfullscreen></iframe>
-<img src="{{ STATIC_URL }}base/images/fcbc_teaser.png">
-<h2>Tickets</h2>
-<p>Sit tight! You will be able to purchase your tickets here soon!</p>
-<h2>For our Sponsors</h2>
-<p>We encourage all interested in advertising and supporting college boxing to submit a sponsorship application. We look forward to working with you!</p>
-<p>Download - <a href="{{ STATIC_URL }}base/media/sponsorship_application.pdf">Sponsorship Application</a>
 
 {% endblock %}

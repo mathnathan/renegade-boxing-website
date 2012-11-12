@@ -1,8 +1,8 @@
 import os
 import sys
 
-sys.path.append("/var/www/mysite/mysite")
-sys.path.append("/var/www/mysite")
+sys.path.append("/home/nathan/renegade/mysite")
+sys.path.append("/home/nathan/renegade")
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
