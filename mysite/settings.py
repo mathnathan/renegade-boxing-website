@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Nathan Crock', 'nathan.crock@renegade-boxing.com'),
+	('Nathan Crock', 'nathan.crock@renegade-boxing.com'),
 )
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.split(__file__)[0], ".."))
