@@ -1,28 +1,28 @@
 {% extends "base.html" %}
 
 {% block style %}
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}base/css/home-style.css">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/home-style.css">
 {% endblock %}
 {% block scripts %}
-<script type="text/javascript" src="{{ STATIC_URL }}base/scripts/home-animate.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}scripts/home-animate.js"></script>
 {% endblock %}
 
 {% block body %}
 	<div id="slider">
-		<img class="arrow" id="left_arrow" src="{{ STATIC_URL }}base/images/left_arrow.png">
-		<img class="arrow" id="right_arrow" src="{{ STATIC_URL }}base/images/right_arrow.png">
-		<img id="slide-text" src="{{ STATIC_URL }}base/images/slide-text.png">
+		<img class="arrow" id="left_arrow" src="{{ STATIC_URL }}images/left_arrow.png">
+		<img class="arrow" id="right_arrow" src="{{ STATIC_URL }}images/right_arrow.png">
+		<img id="slide-text" src="{{ STATIC_URL }}images/lide-text.png">
 		<a href={% url contact %}><p>JOIN US</p></a>
 		<div id="images"> <!-- The order they're in is the order they show --!>
-			<img src="{{ STATIC_URL }}base/images/rafi_stance.jpg">
-			<img src="{{ STATIC_URL }}base/images/slide1.jpg">
-			<img src="{{ STATIC_URL }}base/images/flare.jpg">
-			<img src="{{ STATIC_URL }}base/images/slide2.jpg">
-			<img src="{{ STATIC_URL }}base/images/punching_line.jpg">
-			<img src="{{ STATIC_URL }}base/images/slide4.jpg">
-			<img src="{{ STATIC_URL }}base/images/push-ups.jpg">
-			<img src="{{ STATIC_URL }}base/images/slide7.jpg">
-			<img src="{{ STATIC_URL }}base/images/slide3.jpg">
+			<img src="{{ STATIC_URL }}images/rafi_stance.jpg">
+			<img src="{{ STATIC_URL }}images/slide1.jpg">
+			<img src="{{ STATIC_URL }}images/flare.jpg">
+			<img src="{{ STATIC_URL }}images/slide2.jpg">
+			<img src="{{ STATIC_URL }}images/punching_line.jpg">
+			<img src="{{ STATIC_URL }}images/slide4.jpg">
+			<img src="{{ STATIC_URL }}images/push-ups.jpg">
+			<img src="{{ STATIC_URL }}images/slide7.jpg">
+			<img src="{{ STATIC_URL }}images/slide3.jpg">
 		</div>
 	</div>
 
@@ -30,16 +30,16 @@
 		<span id="left-block">
 			<p id="top-text"> First Class Instruction </p>
 			<a href={% url staff %}><p id="bottom-text"> SEE OUR COACHES > </p></a>
-			<img src="{{ STATIC_URL }}base/images/joab_fists.jpg">
+			<img src="{{ STATIC_URL }}images/joab_fists.jpg">
 		</span>
 		<span id="center-block">
 			<a href={% url contact %}><p>SIGN UP</p></a>
-			<img src="{{ STATIC_URL }}base/images/free-trial.jpg">
+			<img src="{{ STATIC_URL }}images/free-trial.jpg">
 		</span>
 		<span id="right-block">
 			<p id="top-text"> Unparalleled Conditioning </p>
 			<a href={% url classes %}><p id="bottom-text"> SEE OUR CLASSES > </p></a>
-			<img src="{{ STATIC_URL }}base/images/box2.jpg">
+			<img src="{{ STATIC_URL }}images/box2.jpg">
 		</span>
 	</div>
 

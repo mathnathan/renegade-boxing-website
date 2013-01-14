@@ -5,7 +5,7 @@
 <style type="text/css">
 
 #content #bottom {
-	height: 1940px;
+	height: 80px;
 }
 
 .proboxers {
@@ -29,7 +29,7 @@ $(document).ready(function() {
 {% endblock %}
 
 {% block content-title %}
-<h1 style='padding-bottom: 20px'>Upcoming Events</h1>
+<h1 style='padding-bottom: 20px'>Past Events</h1>
 {% endblock %}
 
 {% block top-content %}
@@ -37,7 +37,7 @@ $(document).ready(function() {
 {% endblock %}
 
 {% block left-content %}
-<img style='float: left; padding: 20px 20px 0px 0px' src='{{ STATIC_URL }}base/images/fcbc-logo-small.png'>
+<img style='float: left; padding: 20px 20px 0px 0px' src='{{ STATIC_URL }}images/fcbc-logo-small.png'>
 <h3>About the Event</h3>
 <p>Florida's first intercollegiate boxing match since 1960. With <a href="{% url fcbc1 %}">World Champion
 boxers</a> in attendance you won't want to miss this historic
@@ -50,17 +50,17 @@ fighters from Florida schools face off in the ring! ... <a href={% url fcbc1 %}>
 href='http://www.starwoodhotels.com/alofthotels/property/overview/index.html?propertyID=3046'>Aloft</a></p>
 <h2>Sponsorship</h2>
 <p>We encourage all interested in advertising and supporting college boxing to
-submit a <a href="{{ STATIC_URL }}base/media/sponsorship_application.pdf">sponsorship application</a>. We look
+submit a <a href="http://dev.renegade-boxing.com/downloads/sponsorship_application.pdf">sponsorship application</a>. We look
 forward to working with you!</p>
 {% endblock %}
 
 {% block right-content %}
-<img style='float: left; padding: 0px 20px 0px 20px' src='{{ STATIC_URL }}base/images/vertbar-grey.png'>
+<img style='float: left; padding: 0px 20px 0px 20px' src='{{ STATIC_URL }}images/vertbar-grey.png'>
 <h3 class='center large'>COLLEGE BOXING IS BACK</h3>
 <h3 class='center small'>DECEMBER 1ST, 2012</h3>
 <h3 class='center small'>LEON COUNTY CIVIC CENTER | 7:00pm</h3>
 <a href='http://www.ticketmaster.com/event/22004966A83163B6?artistid=1798686&majorcatid=10004&minorcatid=33'>
-<img id='ticket-button' src='{{ STATIC_URL }}base/images/ticket-button.png'>
+<img id='ticket-button' src='{{ STATIC_URL }}images/ticket-button.png'>
 
 <a class='button'
 href="http://www.youtube.com/embed/kVFCrjy4G4U?autoplay=1&wmode=transparent"><p
